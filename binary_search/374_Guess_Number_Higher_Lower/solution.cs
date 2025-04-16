@@ -1,7 +1,3 @@
-// 374. Guess Number Higher or Lower
-// Https://leetcode.com/problems/guess-number-higher-or-lower/
-// Difficulty: Easy
-// Tags: Binary Search
 
 /** 
  * Forward declaration of guess API.

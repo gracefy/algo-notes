@@ -1,7 +1,4 @@
-// 69. Sqrt(x)
-// https://leetcode.com/problems/sqrtx/
-// Difficulty: Easy
-// Tags: Binary Search
+
 
 public class Solution
 {
@@ -13,7 +10,7 @@ public class Solution
     while (left <= right)
     {
       int mid = left + (right - left) / 2;
-      long square = (long)mid * mid;
+      long square = (long)mid * mid; // Use long to prevent overflow
 
       if (square == x)
       {

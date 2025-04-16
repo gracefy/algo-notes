@@ -1,7 +1,3 @@
-// 35. Search Insert Position
-// https://leetcode.com/problems/search-insert-position/
-// Difficulty: Easy
-// Tags: Array, Binary Search
 
 public class Solution
 {
@@ -13,7 +9,7 @@ public class Solution
 
     while (left <= right)
     {
-      int mid = (left + right) / 2;
+      int mid = left + (right - left) / 2;
 
       if (nums[mid] == target)
       {

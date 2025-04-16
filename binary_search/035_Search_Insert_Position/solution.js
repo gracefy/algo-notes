@@ -1,19 +1,14 @@
-// 35. Search Insert Position
-// https://leetcode.com/problems/search-insert-position/
-// Difficulty: Easy
-// Tags: Array, Binary Search
-
 /**
  * @param {number[]} nums
  * @param {number} target
  * @return {number}
  */
 var searchInsert = function (nums, target) {
-  let left = 0
-  let right = nums.length - 1
+  let left = 0;
+  let right = nums.length - 1;
 
   while (left <= right) {
-    const mid = Math.floor((left + right) / 2)
+    const mid = left + Math.floor((right - left) / 2);
 
     if (nums[mid] === target) {
       return mid;
@@ -26,7 +21,6 @@ var searchInsert = function (nums, target) {
 
   return left;
 };
-
 
 /*
 Example 1:
