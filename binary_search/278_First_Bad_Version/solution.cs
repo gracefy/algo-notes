@@ -1,7 +1,4 @@
-// 278. First Bad Version
-// https://leetcode.com/problems/first-bad-version/
-// Difficulty: Easy
-// Tags: Binary Search
+
 
 /* The isBadVersion API is defined in the parent class VersionControl.
       bool IsBadVersion(int version); */
@@ -13,14 +10,14 @@ public class Solution : VersionControl
     int left = 1;
     int right = n;
 
-    while (left <= right)
+    while (left < right)
     {
       int mid = left + (right - left) / 2;
       bool result = IsBadVersion(mid);
 
       if (result)
       {
-        right = mid - 1;
+        right = mid;
       }
       else
       {
